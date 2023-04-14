@@ -188,7 +188,7 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - name: Package OpenWrt Firmware
+    - name: Package OpenWrt Firmware
   uses: unifreq/openwrt_packit@master
   env:
     OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*rootfs.tar.gz
